@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    background-color: #ffe6f2; /* Soft pink */
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+/* Love Letter */
+.letter {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #d43a52;
+}
+
+/* Surprise Button */
+button {
+    background: #ff4d6d;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #d43a52;
+}
+
+/* Hidden Surprise Message */
+.hidden {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff4d6d;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Sparkle Effect */
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50%;
+    opacity: 1;
+    animation: sparkleAnimation 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes sparkleAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

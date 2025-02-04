@@ -1,0 +1,98 @@
+h1{
+    font-family: "Raleway", serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+.Note {
+    text-align: center;
+}
+
+.loginbox {
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    height: 500px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.loginbox h3 {
+    text-align: center;
+    font-family: "Raleway", serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.loginbox label {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Raleway", serif;
+    margin-top: 10px;
+    display: block;
+}
+
+.loginbox input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.loginbox input:focus {
+    border-color: #20058e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(17, 47, 220, 0.5);
+}
+
+.loginbox button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #430de4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.loginbox button:hover {
+    background: #9886e0;
+}
+
+body{
+    background-color: pink;
+}
+
+/* Message Box */
+#messageBox {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+/* Success Message */
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+/* Error Message */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
